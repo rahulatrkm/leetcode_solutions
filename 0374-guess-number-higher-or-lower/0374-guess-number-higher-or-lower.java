@@ -20,7 +20,6 @@ public class Solution extends GuessGame {
             } else {
                 l = mid+1;
             }
-            // System.out.println(l + " " + h + " " + mid);
         }
         return -1;
     }

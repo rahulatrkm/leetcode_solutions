@@ -9,10 +9,10 @@
 
 public class Solution extends GuessGame {
     public int guessNumber(int n) {
-        int l = 1, h = n;
+        int l = 1, h = n, mid, val;
         while (l <= h) {
-            int  mid = l + (h-l)/2;
-            int val = guess(mid);
+            mid = l + (h-l)/2;
+            val = guess(mid);
             if (val == 0) {
                 return mid;
             } else if (val < 0) {
